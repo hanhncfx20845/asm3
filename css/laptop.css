@@ -13,11 +13,19 @@ li,
 div {
   color: var(--bs-secondary);
 }
+h3 {
+  color: var(--bs-primary);
+}
 h1,
 h2 {
-  margin: 0;
   color: var(--bs-dark);
+  margin: 0;
 }
+h3,
+h4 {
+  font-weight: bold;
+}
+
 p,
 td {
   line-height: 1.5;
@@ -242,12 +250,12 @@ ul.ul-custom li::before {
 }
 #certificate .certificate-item {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 25px;
   position: relative;
 }
 #certificate .certificate-item > img {
-  width: 175px;
+  width: 100%;
   height: auto;
 }
 /* --- Drawing lines --- */
@@ -293,25 +301,18 @@ ul.ul-custom li::before {
   flex-direction: column;
 }
 #project .project-image > img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  vertical-align: middle;
 }
-#project .project-row {
+#project .project-info {
   display: grid;
   grid-template-columns: repeat(3, auto);
-
   justify-items: start;
   justify-content: start;
   padding: 10px 15px;
-  border: 1px solid #eaeaea;
-  border-bottom: unset;
   gap: 0px 15px;
 }
-#project .project-name > * {
-  grid-column: 1 / -1;
-}
-#project .project-row i.icon {
+#project .project-info i.icon {
   font-size: 120%;
 }
 #project .highlight-box {
@@ -323,18 +324,6 @@ ul.ul-custom li::before {
 /* Styling table in project section */
 #project .project-description td:first-child {
   width: 25%;
-}
-/* This makes all tables have the same height */
-#project .project-description {
-  display: flex;
-  flex: 1;
-}
-/* This makes border of tr being showed */
-#project .project-description table {
-  border-collapse: collapse;
-}
-#project .project-description tr {
-  border: 1px solid #eaeaea;
 }
 
 /* --- STYLING FOOTER --- */
@@ -358,13 +347,6 @@ ul.ul-custom li::before {
 }
 
 /* --- STYLING PROJECT CHARTER */
-#project-charter h3 {
-  color: var(--bs-primary);
-  font-weight: bold;
-}
-#project-charter h4 {
-  font-weight: bold;
-}
 #project-charter p,
 #project-charter div {
   color: #000;

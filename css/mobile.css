@@ -14,11 +14,11 @@
   #project .section-description {
     grid-template-columns: auto;
   }
-  #project .project-row {
+  #project .project-info {
     grid-template-columns: auto;
     row-gap: 5px;
   }
-  .project-row .highlight-box {
+  .project-info .highlight-box {
     grid-row: unset;
   }
 }
