@@ -4,71 +4,77 @@ const projectObj = {
     name: "CV CÁ NHÂN",
     goals: [
       {
-        name: "Giao diện CV 1",
+        title: "Giao diện CV 1",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
       {
-        name: "Giao diện CV 2",
+        title: "Giao diện CV 2",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
       {
-        name: "Giao diện CV 3",
+        title: "Giao diện CV 3",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
     ],
     team: [
       {
-        member: "Member 1",
-        name: "Trần Du A",
+        title: "Member 1",
+        desc: "Trần Du A",
       },
       {
-        member: "Member 2",
-        name: "Trần Du B",
+        title: "Member 2",
+        desc: "Trần Du B",
       },
       {
-        member: "Member 3",
-        name: "Trần Du C",
+        title: "Member 3",
+        desc: "Trần Du C",
       },
       {
-        member: "Member 4",
-        name: "Trần Du D",
+        title: "Member 4",
+        desc: "Trần Du D",
       },
     ],
-    scopes: {
-      in: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      out: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
+    scopes: [
+      {
+        title: "IN",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        title: "OUT",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
     primary: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?",
     ],
     timeline: [
       {
-        date: "Project Start",
+        title: "Project Start",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
     ],
@@ -77,71 +83,73 @@ const projectObj = {
     name: "TRANG WEB QUẢN LÝ THÚ CƯNG",
     goals: [
       {
-        name: "Quản lý thú 1",
+        title: "Quản lý thú 1",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
       {
-        name: "Quản lý thú 2",
+        title: "Quản lý thú 2",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
       {
-        name: "Quản lý thú 3",
+        title: "Quản lý thú 3",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
     ],
     team: [
       {
-        member: "Member 1",
-        name: "Phan Thị A",
+        title: "Member 1",
+        desc: "Phan Thị A",
       },
       {
-        member: "Member 2",
-        name: "Phan Thị B",
+        title: "Member 2",
+        desc: "Phan Thị B",
       },
       {
-        member: "Member 3",
-        name: "Phan Thị C",
+        title: "Member 3",
+        desc: "Phan Thị C",
       },
       {
-        member: "Member 4",
-        name: "Phan Thị D",
+        title: "Member 4",
+        desc: "Phan Thị D",
       },
     ],
-    scopes: {
-      in: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      out: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
+    scopes: [
+      {
+        title: "IN",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        title: "OUT",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
     primary: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?",
     ],
     timeline: [
       {
-        date: "Project Start",
+        title: "Project Start",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
-        desc: "Lorem ipsum dolor sit amet.",
-      },
-      {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
     ],
@@ -150,102 +158,136 @@ const projectObj = {
     name: "TRANG WEB XEM TIN TỨC",
     goals: [
       {
-        name: "Dựng web 1",
+        title: "Dựng web 1",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
       {
-        name: "Dựng web 2",
+        title: "Dựng web 2",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
       {
-        name: "Dựng web 3",
+        title: "Dựng web 3",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est in ipsam veniam vitae earum totam.",
       },
     ],
     team: [
       {
-        member: "Member 1",
-        name: "Lý Văn A",
+        title: "Member 1",
+        desc: "Lý Văn A",
       },
       {
-        member: "Member 2",
-        name: "Lý Văn B",
+        title: "Member 2",
+        desc: "Lý Văn B",
       },
       {
-        member: "Member 3",
-        name: "Lý Văn C",
+        title: "Member 3",
+        desc: "Lý Văn C",
       },
       {
-        member: "Member 4",
-        name: "Lý Văn D",
+        title: "Member 4",
+        desc: "Lý Văn D",
       },
     ],
-    scopes: {
-      in: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      out: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
+    scopes: [
+      {
+        title: "IN",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        title: "OUT",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
     primary: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?",
     ],
     timeline: [
       {
-        date: "Project Start",
+        title: "Project Start",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
       {
-        date: "Project Date",
+        title: "Project Date",
+        desc: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        title: "Project Date",
         desc: "Lorem ipsum dolor sit amet.",
       },
     ],
   },
 };
+
 // Get projectid param value from url
 const url_str = window.location.href;
 const url = new URL(url_str.toLowerCase());
 const projectId = url.searchParams.get("projectid");
+
+// Function to replace content of section
+const replaceProjectSection = function (element, objName) {
+  // Clone the first child of the element as a template
+  const tempEl = element.querySelector(".section-item").cloneNode(true);
+  // Remove the content before appending the new ones
+  element.innerHTML = "";
+  for (let i = 0; i < projectObj[projectId][objName].length; i++) {
+    // Clone it to append multiple times
+    const item = tempEl.cloneNode(true);
+    if (objName === "primary") {
+      item.querySelector(".desc").innerHTML = projectObj[projectId][objName][i];
+    } else {
+      item.querySelector(".title").innerHTML =
+        projectObj[projectId][objName][i].title;
+      item.querySelector(".desc").innerHTML =
+        projectObj[projectId][objName][i].desc;
+      if (objName === "timeline") {
+        // Create string number, which is index+1, and displaying "0" if it's less than 10
+        const numString = (i + 1 < 10 ? "0" : "") + (i + 1);
+        item.querySelector(".title-number").innerHTML = numString;
+      }
+    }
+    element.appendChild(item);
+  }
+};
+// Check if the project exists
 if (projectObj[projectId]) {
-  // -- Replace some contents
   // Replace project name
-  document.querySelector(".pj-name > *").innerText = projectObj[projectId].name;
+  document.querySelector(".pj-name > *").innerHTML = projectObj[projectId].name;
 
-  // Replace goals name
-  const goalsEls = document.querySelectorAll("#goals strong");
-  for (let i = 0; i < goalsEls.length; i++) {
-    goalsEls[i].innerText = projectObj[projectId].goals[i].name;
-  }
-
-  // Replace team name
-  const nameEls = document.querySelectorAll("#team p span");
-  for (let i = 0; i < nameEls.length; i++) {
-    nameEls[i].innerText = projectObj[projectId].team[i].name;
-  }
+  // Declare an array list of sections to be replaced
+  const sectionArray = ["goals", "team", "scopes", "primary", "timeline"];
+  sectionArray.forEach(function (i) {
+    // Select the desc element of the section
+    const sectionEl = document.querySelector("#" + i + " .section-description");
+    // Replace its content with the corresponding object name in projectObj
+    replaceProjectSection(sectionEl, i);
+  });
 
   // Display error if projectid does not exist in projectObj
 } else {
-  document.querySelector(".pj-name > *").innerText = "(Không tìm thấy dự án)";
+  document.querySelector(".pj-name > *").innerHTML = "(Không tìm thấy dự án)";
   document.querySelector(".pj-description").classList.add("d-none");
 }
 
-// Scroll to the project name
-document.querySelector(".pj-name").scrollIntoView();
+// By default, scroll to the project name after page loads
+document.querySelector("#project-charter").scrollIntoView();
