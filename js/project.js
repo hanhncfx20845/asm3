@@ -268,11 +268,13 @@ const replaceProjectSection = function (element, objName) {
     }
     element.appendChild(item);
   }
+  element.classList.remove("d-none");
 };
 // Check if the project exists
 if (projectObj[projectId]) {
   // Replace project name
   document.querySelector(".pj-name > *").innerHTML = projectObj[projectId].name;
+  document.querySelector(".pj-name").classList.remove("d-none");
 
   // Declare an array list of sections to be replaced
   const sectionArray = ["goals", "team", "scopes", "primary", "timeline"];
@@ -286,7 +288,7 @@ if (projectObj[projectId]) {
   // Display error if projectid does not exist in projectObj
 } else {
   document.querySelector(".pj-name > *").innerHTML = "(Không tìm thấy dự án)";
-  document.querySelector(".pj-description").classList.add("d-none");
+  document.querySelector(".pj-name").classList.remove("d-none");
 }
 
 // By default, scroll to the project name after page loads
