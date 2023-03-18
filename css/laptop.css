@@ -204,6 +204,7 @@ ul.ul-custom li::before {
   align-items: center;
   gap: 10px;
   text-align: center;
+  flex: 1;
 }
 #job-info .hobby-item i.icon {
   font-size: 1.5em;
