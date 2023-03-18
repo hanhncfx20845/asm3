@@ -1,14 +1,4 @@
 @media screen and (max-width: 991.98px) {
-  /* --- Banner ---  */
-  #fullname-overlay {
-    padding-top: 130px;
-  }
-
-  /* --- Navigation ---*/
-  #avatar-container {
-    width: auto;
-  }
-
   /* --- Certificate section --- */
   #certificate .certificate-item {
     grid-template-columns: 1fr;
