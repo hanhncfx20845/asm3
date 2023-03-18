@@ -1,0 +1,24 @@
+@media screen and (max-width: 767.98px) {
+  /* Remove vertical line on the left side of even items */
+  #certificate .certificate-item:nth-child(even)::before {
+    content: none;
+  }
+  #certificate .certificate-item::after {
+    right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  #certificate .certificate-item:nth-child(even)::after {
+    left: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  /* --- Project section --- */
+  #project .section-description {
+    grid-template-columns: auto;
+  }
+  #project .project-row {
+    grid-template-columns: auto;
+    row-gap: 5px;
+  }
+  .project-row .highlight-box {
+    grid-row: unset;
+  }
+}

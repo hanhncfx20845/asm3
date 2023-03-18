@@ -1,0 +1,30 @@
+@media screen and (max-width: 991.98px) {
+  /* --- Banner ---  */
+  #fullname-overlay {
+    padding-top: 130px;
+  }
+
+  /* --- Navigation ---*/
+  #avatar-container {
+    width: auto;
+  }
+
+  /* --- Certificate section --- */
+  #certificate .certificate-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  #certificate .certificate-item > img {
+    width: 100%;
+  }
+
+  /* --- Project section --- */
+  #project .project-row {
+    grid-template-columns: auto 1fr;
+    padding: 10px 20px;
+    gap: 0px 20px;
+  }
+  .project-row .highlight-box {
+    grid-row: 1 / span 2;
+  }
+}

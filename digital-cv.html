@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>Project Charter</title>
+  </head>
+  <body>
+    <header>
+      <!-- BANNER -->
+      <div id="banner" class="position-relative">
+        <div
+          id="fullname-overlay"
+          class="w-100 h-100 text-center position-absolute top-0 start-0 d-flex flex-column"
+        >
+          <div class="title">
+            <h1 class="text-white">Nguyễn Cao Hạnh</h1>
+          </div>
+          <div class="sub-title">
+            <small>Full Stack Developer</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav
+        id="nav-bar"
+        class="container-fluid p-0 navbar navbar-expand-md navbar-light border-bottom"
+      >
+        <div
+          class="collapse navbar-collapse show justify-content-around"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item border-start border-end">
+              <a href="index.html#about" class="nav-link py-3 px-5 px-md-5"
+                ><i class="icon icon-user"></i>Thông tin</a
+              >
+            </li>
+            <li class="nav-item border-end">
+              <a href="index.html#job-info" class="nav-link py-3 px-5 px-md-5"
+                ><i class="icon icon-doc-text-inv"></i>Lý lịch</a
+              >
+            </li>
+            <li class="nav-item border-end">
+              <div
+                id="avatar-container"
+                class="position-relative h-100 align-items-center justify-content-center px-4 px-lg-5 d-none d-sm-flex"
+              >
+                <img
+                  src="images/caohanh-avatar.png"
+                  alt="Avatar"
+                  class="position-absolute rounded-circle shadow p-2 bg-white d-none d-lg-inline-block"
+                  width="155px"
+                  height="155px"
+                />
+              </div>
+            </li>
+            <li class="nav-item border-end">
+              <a
+                href="index.html#certificate"
+                class="nav-link py-3 px-5 px-md-5"
+                ><i class="icon icon-mail-alt"></i>Chứng chỉ</a
+              >
+            </li>
+            <li class="nav-item border-end">
+              <a href="index.html#project" class="nav-link py-3 px-5 px-md-5"
+                ><i class="icon icon-star-1"></i>Dự Án</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="project-charter"
+        class="container-fluid px-0 mt-4 mt-lg-5 pt-0 pt-lg-4 pb-5"
+      >
+        <div class="pj-name text-center">
+          <h2>PROJECT NAME</h2>
+        </div>
+        <div class="pj-description px-0 px-xl-5 pt-2 d-flex">
+          <div class="row g-0 bg-primary shadow d-flex flex-fill">
+            <!-- Left column, width is 9/12, and has 2 columns & 2 rows-->
+            <div class="col-12 col-lg-9 d-flex">
+              <div class="p-3 d-flex flex-fill">
+                <div class="row g-3 d-flex flex-fill">
+                  <!-- First item of the row, width is 8/12 -->
+                  <div class="col-12 col-lg-8 d-flex flex-fill">
+                    <section id="goals" class="p-3 border bg-grey flex-fill">
+                      <div class="section-title pb-2">
+                        <h3>Goals</h3>
+                      </div>
+                      <div class="section-description">
+                        <div class="row m-1 p-1 border-bottom">
+                          <div class="col-12 col-lg-2 text-center mt-1">
+                            <i class="icon-flag-checkered fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                            <strong>Goal 1</strong>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Est in ipsam veniam vitae earum
+                              totam.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row m-1 p-1 border-bottom">
+                          <div class="col-12 col-lg-2 text-center mt-1">
+                            <i class="icon-flag-checkered fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                            <strong>Goal 2</strong>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Est in ipsam veniam vitae earum
+                              totam.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row m-1 p-1 border-bottom">
+                          <div class="col-12 col-lg-2 text-center mt-1">
+                            <i class="icon-flag-checkered fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                            <strong>Goal 3</strong>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Est in ipsam veniam vitae earum
+                              totam.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+
+                  <!-- Second item of the row, width is 4/12 -->
+                  <div class="col-12 col-lg-4 d-flex flex-fill">
+                    <section id="team" class="p-3 border bg-grey flex-fill">
+                      <div class="section-title pb-2">
+                        <h3>Team</h3>
+                      </div>
+                      <div class="section-description">
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-2 text-center mt-1 p-0">
+                            <i class="icon-user-2 fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10 pe-0">
+                            <strong>Member 1</strong>
+                            <p>Name: <span>...</span></p>
+                          </div>
+                        </div>
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-2 text-center mt-1 p-0">
+                            <i class="icon-user-2 mt-3 fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10 pe-0">
+                            <strong>Member 2</strong>
+                            <p>Name: <span>...</span></p>
+                          </div>
+                        </div>
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-2 text-center mt-1 p-0">
+                            <i class="icon-user-2 fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10 pe-0">
+                            <strong>Member 3</strong>
+                            <p>Name: <span>...</span></p>
+                          </div>
+                        </div>
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-2 text-center mt-1 p-0">
+                            <i class="icon-user-2 fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10 pe-0">
+                            <strong>Member 4</strong>
+                            <p>Name: <span>...</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+
+                  <!-- Third item of the row, width is 8/12 and thus wrap into a new row -->
+                  <div class="col-12 col-lg-8 d-flex flex-fill">
+                    <section id="scopes" class="p-3 border bg-grey flex-fill">
+                      <div class="section-title pb-2">
+                        <h3>Scopes</h3>
+                      </div>
+                      <div class="section-description">
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-6">
+                            <h4>IN</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit.
+                            </p>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit.
+                            </p>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <h4>OUT</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit.
+                            </p>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+
+                  <!-- Fourth item of the new row, width is 4/12 -->
+                  <div class="col-12 col-lg-4 d-flex flex-fill">
+                    <section id="primary" class="p-3 border bg-grey flex-fill">
+                      <div class="section-title pb-2">
+                        <h3>Primary</h3>
+                      </div>
+                      <div class="section-description">
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-2 text-center mt-1 p-0">
+                            <i class="icon-question fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10 pe-0">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Ullam?
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row m-1 p-1">
+                          <div class="col-12 col-lg-2 text-center mt-1 p-0">
+                            <i class="icon-question fs-3"></i>
+                          </div>
+                          <div class="col-12 col-lg-10 pe-0">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Ullam?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column, width is 3/12 -->
+            <div class="col-12 col-lg-3 d-flex">
+              <div class="d-flex flex-fill">
+                <div class="p-3 ps-3 ps-lg-0 d-flex flex-fill">
+                  <section id="timeline" class="p-3 border bg-grey flex-fill">
+                    <div class="section-title pb-2">
+                      <h3>Timeline</h3>
+                    </div>
+                    <div class="section-description">
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            01
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Start</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            02
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Date</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            03
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Date</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            04
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Date</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            05
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Date</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            06
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Date</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                      <div class="row m-1 p-1">
+                        <div
+                          class="col-12 col-lg-2 text-center mt-1 p-0 ms-2 ms-lg-0"
+                        >
+                          <div
+                            class="rounded-circle circle-number border border-dark d-flex text-white fs-5 align-items-center justify-content-center"
+                          >
+                            07
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-10 pe-0">
+                          <strong>Project Date</strong>
+                          <p class="pb-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section id="footer" class="bg-grey">
+        <div class="container-fluid p-0">
+          <ul>
+            <!-- Footer items -->
+            <li>
+              <a href="https://www.facebook.com/caohanh1502" target="_blank"
+                ><i class="icon icon-facebook-circled"></i
+                ><span class="d-none d-md-inline-block">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/caohanh1502" target="_blank"
+                ><i class="icon icon-linkedin-circled"></i
+                ><span class="d-none d-md-inline-block">Linkedin</span></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/caohanh1502" target="_blank"
+                ><i class="icon icon-github-circled"></i
+                ><span class="d-none d-md-inline-block">Github</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="js/project.js"></script>
+  </body>
+</html>
