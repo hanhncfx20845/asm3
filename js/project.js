@@ -270,6 +270,7 @@ const replaceProjectSection = function (element, objName) {
   }
   element.classList.remove("d-none");
 };
+
 // Check if the project exists
 if (projectObj[projectId]) {
   // Replace project name

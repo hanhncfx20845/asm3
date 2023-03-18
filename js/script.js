@@ -48,18 +48,19 @@ const btnJobView = document.querySelectorAll("#job-info .section-button");
 for (let i = 0; i < btnJobView.length; i++) {
   btnJobView[i].addEventListener("click", function () {
     const sectionDesEl = this.parentNode.querySelector(".section-description");
+    sectionDesEl.classList.toggle("d-none");
 
-    // Show the content
+    // After toggling it, check if it's hidden
     if (sectionDesEl.classList.contains("d-none")) {
-      sectionDesEl.classList.remove("d-none");
-      this.innerHTML = '<i class="icon-up-big"></i> VIEW LESS';
-      this.parentNode.parentNode.classList.add("d-flex");
-
-      //Hide the content
-    } else {
-      sectionDesEl.classList.add("d-none");
       this.innerHTML = '<i class="icon-down-big"></i> VIEW MORE';
+      // Make it have small height
       this.parentNode.parentNode.classList.remove("d-flex");
+
+      // Else if the content is showed
+    } else {
+      this.innerHTML = '<i class="icon-up-big"></i> VIEW LESS';
+      // Make it have the same height as other sections
+      this.parentNode.parentNode.classList.add("d-flex");
     }
   });
 }
