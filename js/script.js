@@ -43,7 +43,32 @@ emailInput.addEventListener("keyup", function (e) {
   }
 });
 
-// --- VIEW MORE / VIEW LESS BUTTOn ---
+// Masonry layout
+let msnryEl = document.querySelector("#job-info .row");
+let msnry;
+let isActiveMsnry = false;
+window.addEventListener("load", function () {
+  msnry = new Masonry(msnryEl, { percentPosition: true });
+  isActiveMsnry = true;
+  if (window.innerWidth >= 992) {
+    msnry.destroy();
+    isActiveMsnry = false;
+  }
+});
+// Re-init masonry layout when screen changes
+window.addEventListener("resize", function () {
+  if (window.innerWidth < 992) {
+    if (!isActiveMsnry) {
+      msnry = new Masonry(msnryEl, { percentPosition: true });
+      isActiveMsnry = true;
+    }
+  } else if (isActiveMsnry) {
+    msnry.destroy();
+    isActiveMsnry = false;
+  }
+});
+
+// --- VIEW MORE / VIEW LESS BUTTON ---
 const btnJobView = document.querySelectorAll("#job-info .section-button");
 for (let i = 0; i < btnJobView.length; i++) {
   btnJobView[i].addEventListener("click", function () {
@@ -61,6 +86,13 @@ for (let i = 0; i < btnJobView.length; i++) {
       this.innerHTML = '<i class="icon-up-big"></i> VIEW LESS';
       // Make it have the same height as other sections
       this.parentNode.parentNode.classList.add("d-flex");
+    }
+
+    // Re-init masonry layout
+    if (window.innerWidth < 992) {
+      try {
+        msnry.layout();
+      } catch {}
     }
   });
 }
