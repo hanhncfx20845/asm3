@@ -54,18 +54,18 @@ window.addEventListener("load", function () {
     msnry.destroy();
     isActiveMsnry = false;
   }
-});
-// Re-init masonry layout when screen changes
-window.addEventListener("resize", function () {
-  if (window.innerWidth < 992) {
-    if (!isActiveMsnry) {
-      msnry = new Masonry(msnryEl, { percentPosition: true });
-      isActiveMsnry = true;
+  // Re-init masonry layout when screen changes
+  window.addEventListener("resize", function () {
+    if (window.innerWidth < 992) {
+      if (!isActiveMsnry) {
+        msnry = new Masonry(msnryEl, { percentPosition: true });
+        isActiveMsnry = true;
+      }
+    } else if (isActiveMsnry) {
+      msnry.destroy();
+      isActiveMsnry = false;
     }
-  } else if (isActiveMsnry) {
-    msnry.destroy();
-    isActiveMsnry = false;
-  }
+  });
 });
 
 // --- VIEW MORE / VIEW LESS BUTTON ---
